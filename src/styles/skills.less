@@ -1,0 +1,49 @@
+.skills
+{
+	&:extend(.section all);
+
+	&__title
+	{
+		&:extend(.section__title all);
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.skill
+{
+	&:extend(.sectionItem all);
+
+	&__name
+	{
+		&:extend(.sectionItem__header all, .sectionItem__title all);
+	}
+
+	&__level
+	{
+		&:extend(.tag all);
+
+		margin: 0 0 0 5px;
+		border: 0;
+
+		&--expert     { color: #fff; background: #337ab7 }
+		&--proficient { color: #fff; background: #5bc0de }
+	}
+
+	&__buzzwords
+	{
+		&:extend(.sectionItem__content all);
+
+		margin: 0 0 5px;
+	}
+
+	&__buzzword
+	{
+		&:extend(.tag all);
+	}
+
+	&__description
+	{
+		&:extend(.sectionItem__content all, .freeform all);
+	}
+}

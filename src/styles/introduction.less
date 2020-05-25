@@ -1,0 +1,35 @@
+.introduction
+{
+	padding: 0 0 25px;
+	margin: 20px 0;
+	border-bottom: 1px solid #dfdfdf;
+
+	&__avatar
+	{
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 0 auto 10px;
+		border-radius: 50%;
+		border: 1px solid #dfdfdf;
+	}
+
+	&__name
+	{
+		font-size: 24px;
+		color: #333;
+		text-align: center;
+	}
+
+	&__title
+	{
+		font-size: 14px;
+		text-align: center;
+		line-height: 20px;
+	}
+
+	@media print
+	{
+		&__avatar { display: none }
+	}
+}

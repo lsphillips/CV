@@ -1,0 +1,39 @@
+.page
+{
+	font: 14px 'Segoe UI', Roboto, Helvetica, Arial;
+	color: #707070;
+	background: #f0f0f0;
+
+	&__content
+	{
+		width: 960px;
+		padding: 5px 25px;
+		margin: 25px auto;
+		background: #fff;
+		border: 1px solid #dfdfdf;
+		box-sizing: border-box;
+	}
+
+	@media screen and (max-width: 1000px)
+	{
+		background: #fff;
+
+		&__content
+		{
+			width: 100%;
+			margin: 0;
+			border: 0;
+		}
+	}
+
+	@media print
+	{
+		background: none;
+
+		&__content
+		{
+			margin: 0;
+			border: 0;
+		}
+	}
+}

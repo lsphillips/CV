@@ -1,0 +1,36 @@
+.education
+{
+	&:extend(.section all);
+
+	&__title
+	{
+		&:extend(.section__title all);
+	}
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.qualification
+{
+	&:extend(.sectionItem all);
+
+	&__header
+	{
+		&:extend(.sectionItem__header all);
+	}
+
+	&__title
+	{
+		&:extend(.sectionItem__title all);
+	}
+
+	&__school
+	{
+		&:extend(.sectionItem__byline all);
+	}
+
+	&__extra
+	{
+		&:extend(.sectionItem__content all, .freeform all);
+	}
+}

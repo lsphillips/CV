@@ -1,0 +1,49 @@
+.sectionItem
+{
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0 0 15px;
+	margin: 15px 0;
+	border-bottom: 1px solid #eee;
+
+	&:last-child
+	{
+		border: 0;
+		padding: 0;
+	}
+
+	@media print { page-break-inside: avoid }
+}
+
+.sectionItem__header
+{
+	margin: 0 0 10px;
+}
+
+.sectionItem__icon
+{
+	flex: 0 0 0;
+	width: 40px;
+	height: 40px;
+	margin: 0 10px 10px 0;
+	border-radius: 2px;
+
+	@media print { display: none }
+}
+
+.sectionItem__title
+{
+	color: #333;
+	font-weight: bold;
+}
+
+.sectionItem__byline
+{
+	display: block;
+	font-size: 13px;
+}
+
+.sectionItem__content
+{
+	flex: 1 100%;
+}

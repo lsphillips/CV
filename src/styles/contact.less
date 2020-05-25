@@ -1,0 +1,48 @@
+.contact
+{
+	overflow: hidden;
+	margin: 20px 0;
+
+	&__method
+	{
+		display: block;
+		float: left;
+		width: 25%;
+		padding: 10px;
+		line-height: 20px;
+		text-align: center;
+		box-sizing: border-box;
+	}
+
+	&__vendor
+	{
+		display: block;
+		color: #333;
+		font-weight: bold;
+	}
+
+	&__link
+	{
+		&:extend(.link all);
+	}
+
+	@media screen and (max-width: 800px)
+	{
+		&__method { width: 50% }
+	}
+
+	@media screen and (max-width: 500px)
+	{
+		&__method
+		{
+			width: 100%;
+			padding: 10px 0;
+			text-align: left;
+		}
+	}
+
+	@media print
+	{
+		&__method { padding: 10px 0 }
+	}
+}
