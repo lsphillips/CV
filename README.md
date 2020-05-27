@@ -1,6 +1,6 @@
 # The CV of Luke S. Phillips
 
-[![Built using Travis](https://img.shields.io/travis/lsphillips/CV/master.svg?maxAge=900)](https://travis-ci.org/lsphillips/CV)
+[![Built using Travis](https://img.shields.io/travis/com/lsphillips/CV/master.svg?maxAge=900)](https://travis-ci.com/lsphillips/CV)
 
 The source code for the CV of Luke S. Phillips, which can be viewed here: https://www.lsphillips.com/
 
