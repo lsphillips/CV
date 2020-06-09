@@ -37,3 +37,23 @@ npm run publish
 ```
 
 This will perform a build and push the resulting artifact to the `gh-pages` branch of this repository.
+
+### DNS
+
+The `lsphillips.com` domain has `A` records pointing to the following GitHub IP addresses:
+
+  - `185.199.108.153`
+  - `185.199.109.153`
+  - `185.199.110.153`
+  - `185.199.111.153`
+
+It also has a `CNAME` record pointing the `www` subdomain to `lsphillips.github.io`.
+
+#### Resulting Redirects
+
+| Location                     | Status Code | Description                                                                      |
+| ---------------------------- | ----------- | -------------------------------------------------------------------------------- |
+| `http://lsphillips.com`      | `301`       | Redirects to `https://www.lsphillips.com`.                                       |
+| `https://lsphillips.com`     | Failure     | SSL Error. Due to a [known issue](https://github.com/isaacs/github/issues/1675). |
+| `http://www.lsphillips.com`  | `301`       | Redirects to `https://www.lsphillips.com`.                                       |
+| `https://www.lsphillips.com` | `200`       | Where we want to be.                                                             |
