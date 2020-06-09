@@ -49,11 +49,13 @@ The `lsphillips.com` domain has `A` records pointing to the following GitHub IP 
 
 It also has a `CNAME` record pointing the `www` subdomain to `lsphillips.github.io`.
 
-#### Resulting Redirects
+#### Responses
 
-| Location                     | Status Code | Description                                                                      |
-| ---------------------------- | ----------- | -------------------------------------------------------------------------------- |
-| `http://lsphillips.com`      | `301`       | Redirects to `https://www.lsphillips.com`.                                       |
-| `https://lsphillips.com`     | Failure     | SSL Error. Due to a [known issue](https://github.com/isaacs/github/issues/1675). |
-| `http://www.lsphillips.com`  | `301`       | Redirects to `https://www.lsphillips.com`.                                       |
-| `https://www.lsphillips.com` | `200`       | Where we want to be.                                                             |
+| Location                          | Status Code | Description                                                                      |
+| --------------------------------- | ----------- | -------------------------------------------------------------------------------- |
+| `http://lsphillips.github.io/CV`  | `301`       | Redirects to `https://www.lsphillips.com`.                                       |
+| `https://lsphillips.github.io/CV` | `301`       | Redirects to `https://www.lsphillips.com`.                                       |
+| `http://lsphillips.com`           | `301`       | Redirects to `https://www.lsphillips.com`.                                       |
+| `https://lsphillips.com`          | Failure     | SSL Error. Due to a [known issue](https://github.com/isaacs/github/issues/1675). |
+| `http://www.lsphillips.com`       | `301`       | Redirects to `https://www.lsphillips.com`.                                       |
+| `https://www.lsphillips.com`      | `200`       | Where we want to be.                                                             |
