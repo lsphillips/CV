@@ -10,37 +10,31 @@ Node.js is required because NPM scripts are used to facilitate the build process
 
 ### Building
 
-To build a deployable artifact:
+To build a deployable site artifact:
 
 ```
 npm run build
 ```
 
-This will create an `artifact` directory containing the CV.
+This will create a `site` directory containing the site.
 
-### Developing
+### Running locally
 
 To setup a seamless development environment:
 
 ```
-npm run develop
+npm run start
 ```
 
-This will perform a build and watch all source files for changes where the artifact will be rebuilt when such a change occurs.
+This will perform a build in memory and serve it using a local web server on port `1992`. It will watch all source files for changes, where the site will be rebuilt when such changes occur.
 
-### Publishing
+## Deployment
 
-To publish a build:
-
-```
-npm run publish
-```
-
-This will perform a build and push the resulting artifact to the `gh-pages` branch of this repository.
+The site is hosted through GitHub Pages. The deployment is faciliated by the ["Build and Deploy" GitHub Action Workflow](.github/workflows/build-and-deploy.yml), where it will [perform a build](#building) and push the resulting site artifact to the `gh-pages` branch of this repository.
 
 ### DNS
 
-The `lsphillips.com` domain has `A` records pointing to the following GitHub IP addresses:
+The `lsphillips.com` apex domain has `A` records pointing to the following GitHub IP addresses:
 
   - `185.199.108.153`
   - `185.199.109.153`
@@ -49,7 +43,7 @@ The `lsphillips.com` domain has `A` records pointing to the following GitHub IP 
 
 It also has a `CNAME` record pointing the `www` subdomain to `lsphillips.github.io`.
 
-#### Responses
+### Responses
 
 | Location                          | Status Code | Description                                                                      |
 | --------------------------------- | ----------- | -------------------------------------------------------------------------------- |
