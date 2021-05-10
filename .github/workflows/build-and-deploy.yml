@@ -27,6 +27,5 @@ jobs:
           folder: site
           clean: true
           single-commit: true
-          commit-message: Site deployment from ${{ process.env.GITHUB_REF }}@${{ process.env.GITHUB_SHA }}
 
     runs-on: ubuntu-latest
