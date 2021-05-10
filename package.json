@@ -30,7 +30,8 @@
         "mini-css-extract-plugin" : "1.6.0",
         "copy-webpack-plugin" : "8.1.1",
         "css-loader" : "5.2.4",
-        "less-loader" : "8.1.1"
+        "less-loader" : "8.1.1",
+        "less" : "4.1.1"
 	},
 
 	"scripts" :
