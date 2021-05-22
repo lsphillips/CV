@@ -1,0 +1,11 @@
+{
+	"extends" : "protect-me-from-my-stupidity",
+
+	"env" :
+	{
+		"browser" : true,
+		"es6" : true
+	},
+
+	"root" : true
+}

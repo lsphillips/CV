@@ -1,4 +1,4 @@
-.sectionItem
+.section-item
 {
 	display: flex;
 	flex-flow: row wrap;
@@ -15,15 +15,19 @@
 	@media print { page-break-inside: avoid }
 }
 
-.sectionItem__header
+.section-item__header
 {
 	margin: 0 0 10px;
 }
 
-.sectionItem__icon
+.section-item__icon
 {
+	&:extend(.image);
+
 	flex: 0 0 0;
+	display: block;
 	width: 40px;
+	min-width: 40px;
 	height: 40px;
 	margin: 0 10px 10px 0;
 	border-radius: 2px;
@@ -31,19 +35,19 @@
 	@media print { display: none }
 }
 
-.sectionItem__title
+.section-item__title
 {
 	color: #333;
 	font-weight: bold;
 }
 
-.sectionItem__byline
+.section-item__byline
 {
 	display: block;
 	font-size: 13px;
 }
 
-.sectionItem__content
+.section-item__content
 {
 	flex: 1 100%;
 }

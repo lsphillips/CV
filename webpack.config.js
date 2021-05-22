@@ -17,26 +17,34 @@ export default function config ({
 
 		entry :
 		{
-			[name] : './src/styles/index.less'
+			[name] : [
+				'./src/index.js'
+			]
 		},
 
 		output :
 		{
 			path : resolve(output),
 			filename : 'js/[name].js',
-			assetModuleFilename : 'assets/[contenthash][ext]'
+			assetModuleFilename : 'assets/[contenthash][ext]',
+			environment : {
+				arrowFunction : false,
+				destructuring : false,
+				const         : false,
+				forOf         : false
+			}
 		},
 
 		optimization :
 		{
 			minimizer :
 			[
-				// JavaScript
+				// JavaScript.
 				new TerserPlugin({
 					extractComments : false
 				}),
 
-				// CSS.
+				// Stylesheets.
 				new CssMinimizerPlugin()
 			],
 
@@ -47,6 +55,16 @@ export default function config ({
 		{
 			rules :
 			[
+				{ // JavaScript.
+					use :
+					[
+						{
+							loader : 'babel-loader'
+						}
+					],
+					test : /\.js$/
+				},
+
 				{ // Stylesheets.
 					use :
 					[
@@ -64,7 +82,7 @@ export default function config ({
 							}
 						}
 					],
-					test : /\.less$/,
+					test : /\.less$/
 				},
 
 				{ // File Assets.

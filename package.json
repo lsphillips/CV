@@ -1,7 +1,7 @@
 {
 	"name" : "the-cv-of-lsphillips",
 
-	"version" : "6.0.0",
+	"version" : "7.0.0",
 
     "type" : "module",
 
@@ -29,14 +29,23 @@
         "css-minimizer-webpack-plugin" : "2.0.0",
         "mini-css-extract-plugin" : "1.6.0",
         "copy-webpack-plugin" : "8.1.1",
+        "terser-webpack-plugin" : "5.1.2",
         "css-loader" : "5.2.4",
         "less-loader" : "8.1.1",
-        "less" : "4.1.1"
+        "babel-loader" : "8.2.2",
+        "less" : "4.1.1",
+        "@babel/core" : "7.14.2",
+        "@babel/preset-env" : "7.14.2",
+        "eslint" : "7.26.0",
+		"eslint-plugin-import" : "2.23.2",
+		"eslint-plugin-promise" : "5.1.0",
+		"eslint-config-protect-me-from-my-stupidity" : "7.2.2"
 	},
 
 	"scripts" :
 	{
 		"build" : "webpack",
+        "test" : "eslint \"**/*.js\" --ignore-path .gitignore",
         "start" : "webpack serve --compress --port 1992 --history-api-fallback --env output=development"
 	},
 
