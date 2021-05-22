@@ -25,14 +25,14 @@ export default function config ({
 		output :
 		{
 			path : resolve(output),
-			filename : 'js/[name].js',
-			assetModuleFilename : 'assets/[contenthash][ext]',
 			environment : {
 				arrowFunction : false,
+				const : false,
 				destructuring : false,
-				const         : false,
-				forOf         : false
-			}
+				forOf : false
+			},
+			filename : 'js/[name].js',
+			assetModuleFilename : 'assets/[contenthash][ext]'
 		},
 
 		optimization :
