@@ -1,0 +1,1 @@
+!function(){"use strict";document.addEventListener("load",(function(t){"img"===t.target.tagName.toLowerCase()&&(t.target.style.opacity=1)}),!0),Array.prototype.forEach.call(document.images,(function(t){t.complete&&(t.style.opacity=1)}))}();

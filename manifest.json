@@ -1,0 +1,35 @@
+{
+	"name" : "Luke S. Phillips",
+
+	"short_name" : "Luke S. Phillips",
+
+	"description" : "Software Engineer in London, United Kingdom",
+
+	"icons" :
+	[
+		{
+			"type" : "image/png",
+			"sizes" : "256x256",
+			"src" : "resources/logo/256x256.png"
+		},
+		{
+			"type" : "image/png",
+			"sizes" : "512x512",
+			"src" : "resources/logo/512x512.png"
+		}
+	],
+
+	"start_url" : "./",
+
+	"scope" : ".",
+
+	"display" : "minimal-ui",
+
+	"theme_color" : "#428bca",
+
+	"background_color" : "#ffffff",
+
+	"dir" : "ltr",
+
+	"lang" : "en-GB"
+}
