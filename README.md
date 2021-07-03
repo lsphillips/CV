@@ -1,5 +1,7 @@
 # The CV of Luke S. Phillips
 
+[![Built using GitHub Action](https://github.com/lsphillips/CV/actions/workflows/build-and-deploy.yml/badge.svg?branch=master)](https://github.com/lsphillips/CV/actions)
+
 The source code for the CV of Luke S. Phillips, which can be viewed here: https://www.lsphillips.com/
 
 ## Development
